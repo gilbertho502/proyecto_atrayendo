@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Inicio</title>
+</head>
+
+<body class="bg-background">
+
+  <!-- NAVBAR Y BUSCADOR -->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-default  z-index-4 "><!--  -->
+      <div class="container px-4">
+        <a href="#" class="navbar-brand">
+          <form action="index.html"> <img src="images/Logo.png" width="100" alt="" /></form>
+    
+        </a>
+        <!-- TOOGLER (Barritas mobile) -->
+        <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu"
+          aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <div id="navbar_menu" class="navbar-collapse collapse">
+          <!-- Lista de Items -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="categorias" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">CATEGORÍAS</a>
+              <ul class="dropdown-menu" aria-labelledby="categorias">
+                <li>
+                  <a class="dropdown-item" href="#"> Zapatos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ropa</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Electrodomésticos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Videojuegos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Limpieza </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Celulares </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Vehículos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Servicios</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Computadoras </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Electrinicos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Joyería</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bicicletas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Juguetes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Comida</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex mx-1 justify-content-between flex-nowrap">
+            <form action="pages/login.html">
+              <button id="btn_cart" class="btn btn-outline-light mx-1">
+            </form>
+              <i class="bi bi-box-arrow-in-right"></i>
+              Ingresar
+            </button>
+              <form action=""><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+                <i class="bi bi-box-arrow-right">Registrarse</i>
+    
+              </button>
+              <form action="pages/cart.html"><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+    
+                <i class="bi bi-cart-check-fill"> Comprar</i>
+              </a>
+    
+              <span class="badge rounded-pill bg-dark ms-1">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-content py-2 z-index-3">
+    
+      <form class="d-flex search ">
+        <button class="btn text-white mx-1 " type="submit"><i class="bi bi-search"></i>
+        </button>
+        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+    
+      </form>
+    </div>
+  </div>
+
+  <!-- CARRUSEL -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="overlay"></div>
+   
+    <div class="carousel-inner z-index-0">
+      <div class="carousel-item active">
+        <img src="images/carousel02.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel03.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel04.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel05.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel06.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+ 
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+  
+
+  </div>
+ 
+
+
+  <section class="py-5">
+    <div class="container mt-2 ">
+
+
+      <div class="row gx-2 row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-4 row-cols-xl-6">
+        <div class="col mb-5">
+          <div class="card h-100">
+
+            <img class="card-img-top" src="images/producto01.jpg" alt="..." />
+            
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Zapatos Vans Tallas variadas</h5>
+
+              <span id="price">Q250.00</span>
+              <p>Zona 10 de Mixco</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+
+                <form action="pages/descripcion.html"><button class="btn btn-outline-dark">Comprar</button></form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto02.png" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">PC de escritorio Nueva</h5>
+
+              <span id="price">Q2,750.00</span>
+              <p>Zona 18</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto03.png" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Iphone 6s</h5>
+
+              <span id="price">Q875.00</span>
+              <p>Villanueva</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto04.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Conjunto de ropa para cabellero</h5>
+
+              <span id="price">Q680.00</span>
+              <p>Zona 6 de Mixco</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto05.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Carro Honda Civic Negro</h5>
+
+              <span id="price">Q22,982.00</span>
+              <p>Zona 1</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto06.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Nintendo Gamecube</h5>
+
+              <span id="price">Q870.00</span>
+              <p>Zona 6 de Mixco</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto07.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Pantaloneta para señorita</h5>
+
+              <span id="price">Q120.00</span>
+              <p>Zona 8</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto08.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Bicicleta montañesa roja</h5>
+
+              <span id="price">Q410.00</span>
+              <p>Zona 18</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/producto09.jpg" alt="..." />
+            <div class="card-body text-center">
+              <h5 id="name" class="fw-bolder">Skate</h5>
+
+              <span id="price">Q840.00</span>
+              <p>Zona 9</p>
+            </div>
+
+            <div class="card-footer pb-4 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button class="btn btn-outline-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="col mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/producto10.jpg" alt="..." />
+          <div class="card-body text-center">
+            <h5 id="name" class="fw-bolder">Nintendo 64 + juegos</h5>
+
+            <span id="price">Q920.00</span>
+            <p>Zona 4 de mixco</p>
+          </div>
+
+          <div class="card-footer pb-4 border-top-0 bg-transparent">
+            <div class="text-center">
+              <button class="btn btn-outline-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+
+
+  <footer class="py-2 bg-content ">
+    <div class="container text-white d-flex justify-content-center align-items-center">
+      <p class="text-center m-0">Atrayendo Talentos Copyright &copy; 2022</p>
+
+      <a href="https://www.facebook.com" target="blank"><i class="bi bi-facebook mx-1 text-white"></i></a>
+      <a href="https://www.whatsapp.com" target="blank"><i class="bi bi-whatsapp mx-1 text-white"></i></a>
+      <a href="https://www.instagram.com" target="blank"><i class="bi bi-instagram mx-1 text-white"></i></a>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

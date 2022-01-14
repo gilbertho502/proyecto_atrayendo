@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="bg-background">
+  <!-- NAVBAR Y BUSCADOR -->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-default  z-index-4 "><!--  -->
+      <div class="container px-4">
+        <a href="../index.html" class="navbar-brand">
+           <img src="../images/Logo.png" width="100" alt="" />
+    
+        </a>
+        <!-- TOOGLER (Barritas mobile) -->
+        <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu"
+          aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <div id="navbar_menu" class="navbar-collapse collapse">
+          <!-- Lista de Items -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="categorias" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">CATEGORÍAS</a>
+              <ul class="dropdown-menu" aria-labelledby="categorias">
+                <li>
+                  <a class="dropdown-item" href="#"> Zapatos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ropa</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Electrodomésticos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Videojuegos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Limpieza </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Celulares </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Vehículos </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Servicios</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Computadoras </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Electrinicos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Joyería</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bicicletas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Juguetes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Comida</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex mx-1 justify-content-between flex-nowrap">
+            <form action="login.html">
+              <button id="btn_cart" class="btn btn-outline-light mx-1">
+            </form>
+              <i class="bi bi-box-arrow-in-right"></i>
+              Ingresar
+            </button>
+              <form action=""><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+                <i class="bi bi-box-arrow-right">Registrarse</i>
+    
+              </button>
+              <form action="cart.html"><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+    
+                <i class="bi bi-cart-check-fill"> Comprar</i>
+              </a>
+    
+              <span class="badge rounded-pill bg-dark ms-1">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-content py-2 z-index-3">
+    
+      <form class="d-flex search ">
+        <button class="btn text-white mx-1 " type="submit"><i class="bi bi-search"></i>
+        </button>
+        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+    
+      </form>
+    </div>
+  </div>
+
+    <header></header>
+
+    <!-- Aqui va el contenido -->
+    <section class="bg-background py-xl-5">
+      <div class="container ">
+          <h1 class="text-light m-5">Carrito de compras</h1>
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center bg-content">
+          <div class="col m-1">
+            <table class="table  table-dark table-hover w-100">
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+                  <td>Q100</td>
+                  <td>
+                    <input type="number" min="0" max="5" />
+                  </td>
+                  <td>Q100</td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <td>Q200</td>
+                  <td>
+                    <input type="number" min="0" max="5" />
+                  </td>
+                  <td>Q200</td>
+                </tr>
+                <tr>
+                  <td scope="row">3</td>
+
+                  <td>Q50</td>
+                  <td>
+                    <input type="number" min="0" max="5" />
+                  </td>
+                  <td>Q50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <div class="card bg-content ">
+                <div class="card-body  text-center text-light " >
+                  <h5 class="card-title   ">TOTAL DEL CARRITO</h5>
+                  <p class="card-text">Productos seleccionados: </p>
+                </div>
+                <ul class="list-group list-group-flush  ">
+                    <li class="list-group-item bg-content text-light">Total del carrito: 
+                       <p class="text-end fw-bold"> Q350</p> </li>
+                    
+                <div class="card-body">
+                    <nav>
+                        <a href="../index.html">
+                          <button type="button" class="btn btn-secondary w-100 mb-2"> 
+                            Seguir comprando
+                          </button>
+                        </a>
+
+                        <form action="envio.html">
+                          <button type="submit" class="btn btn-success w-100">Comprar
+                          </button>
+                        </form>
+                    </nav>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aqui va el footer -->
+    <footer class="py-2 bg-content ">
+      <div class="container text-white d-flex justify-content-center align-items-center">
+        <p class="text-center m-0">Atrayendo Talentos Copyright &copy; 2022</p>
+  
+        <a href="https://www.facebook.com" target="blank"><i class="bi bi-facebook mx-1 text-white"></i></a>
+        <a href="https://www.whatsapp.com" target="blank"><i class="bi bi-whatsapp mx-1 text-white"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="bi bi-instagram mx-1 text-white"></i></a>
+  
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

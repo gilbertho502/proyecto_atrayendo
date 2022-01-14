@@ -1,0 +1,180 @@
+<!-- Jullisa -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>informacion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body class="bg-background">
+    <!-- NAVBAR Y BUSCADOR -->
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-default  z-index-4 "><!--  -->
+        <div class="container px-4">
+          <a href="../index.html" class="navbar-brand">
+             <img src="../images/Logo.png" width="100" alt="" />
+      
+          </a>
+          <!-- TOOGLER (Barritas mobile) -->
+          <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu"
+            aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- MENÚ DE NAVEGACIÓN -->
+          <div id="navbar_menu" class="navbar-collapse collapse">
+            <!-- Lista de Items -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="categorias" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">CATEGORÍAS</a>
+                <ul class="dropdown-menu" aria-labelledby="categorias">
+                  <li>
+                    <a class="dropdown-item" href="#"> Zapatos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ropa</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Electrodomésticos </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Videojuegos </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Limpieza </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Celulares </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vehículos </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Servicios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Computadoras </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Electrinicos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Joyería</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Bicicletas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Juguetes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Comida</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex mx-1 justify-content-between flex-nowrap">
+              <form action="login.html">
+                <button id="btn_cart" class="btn btn-outline-light mx-1">
+              </form>
+                <i class="bi bi-box-arrow-in-right"></i>
+                Ingresar
+              </button>
+                <form action=""><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+                  <i class="bi bi-box-arrow-right">Registrarse</i>
+      
+                </button>
+                <form action="cart.html"><button id="btn_cart" class="btn btn-outline-light mx-1"></form>
+      
+                  <i class="bi bi-cart-check-fill"> Comprar</i>
+                </a>
+      
+                <span class="badge rounded-pill bg-dark ms-1">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-content py-2 z-index-3">
+      
+        <form class="d-flex search ">
+          <button class="btn text-white mx-1 " type="submit"><i class="bi bi-search"></i>
+          </button>
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+      
+        </form>
+      </div>
+    </div>
+
+    <section class="">
+      <div class="container row mb-3">
+        <div class="card-group">
+          <div class="card col-s-1 col-m-1 bg-content mt-3">
+            <img src="/images/producto01.jpg" class="h-100" alt="" />
+          </div>
+
+          <div class="card col-s-1 col-m-1 bg-content mt-3">
+            <p class="text-white h1 pt-4 ps-3">Zapatos Vans Tallas Variadas</p>
+            <h1 class="text-white mt-1 card-title ps-5 fw-normal">Q250.00</h1>
+            <p class="text-white ps-3 fw-bold">Descripcion del producto</p>
+            <p class="text-white ps-3" >
+              Para muchos, en el top 10 de las mejores zapatillas de la
+              historia, y en Sneakers Runnea compartimos dicha opinión, un
+              diseño sencillo, elegante y distinguido que ha sabido entrar y
+              permanecer en diversas culturas urbanas y todas su generaciones.
+              Una silueta de corte bajo perfecta para utilizarla en fechas
+              veraniegas que ofrece una gran variedad de colores para que puedas
+              combinar a la perfección con todo tu armario.
+            </p>
+
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-success w-50 pr-5 mb-3">
+                Agregar al carrito
+              </button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger w-50">
+                Eliminar del carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-2 bg-content">
+      <div
+        class="container text-white d-flex justify-content-center align-items-center"
+      >
+        <p class="text-center m-0">Atrayendo Talentos Copyright &copy; 2022</p>
+
+        <a href="https://www.facebook.com" target="blank"
+          ><i class="bi bi-facebook mx-1 text-white"></i
+        ></a>
+        <a href="https://www.whatsapp.com" target="blank"
+          ><i class="bi bi-whatsapp mx-1 text-white"></i
+        ></a>
+        <a href="https://www.instagram.com" target="blank"
+          ><i class="bi bi-instagram mx-1 text-white"></i
+        ></a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

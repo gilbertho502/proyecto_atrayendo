@@ -1,0 +1,51 @@
+@import url(vars.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+.color-fondo{
+    background-color: #404040;
+}
+
+.bg-default{
+    background: linear-gradient(to bottom, var(--primary), var(--secondary)); 
+}
+
+.bg-background{
+    background-color: var(--background);
+}
+.bg-content{
+    background-color: var(--content);
+}
+button{
+    border: none;
+}
+.formulario{
+    background: var(--content);
+    padding: 20px;
+}
+.z-index-0{
+    z-index: 0;
+}
+.z-index-1{
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+}
+.z-index-3{
+    z-index: 4;
+}
+.z-index-2{
+    z-index: 3;
+}
+.search{
+    width: 80%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 1;  
+}
